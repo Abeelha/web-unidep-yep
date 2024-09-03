@@ -1,0 +1,53 @@
+<form action="">
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Escolha de Workshops</legend>
+        <input type="checkbox" id="workshop1" name="workshop" value="workshop1">
+        <label for="workshop1">Workshop 1</label><br>
+        <input type="checkbox" id="workshop2" name="workshop" value="workshop2">
+        <label for="workshop2">Workshop 2</label><br>
+        <input type="checkbox" id="workshop3" name="workshop" value="workshop3">
+        <label for="workshop3">Workshop 3</label><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Outros Detalhes</legend>
+        <label for="tamanho_camisa">Tamanho de camiseta:</label>
+        <select id="tamanho_camisa" name="tamanho_camisa">
+            <option value="pp">PP</option>
+            <option value="p">P</option>
+            <option value="m">M</option>
+            <option value="g">G</option>
+            <option value="gg">GG</option>
+        </select><br><br>
+
+        <label for="restricoes">Restrições alimentares:</label><br>
+        <textarea id="restricoes" name="restricoes"></textarea><br><br>
+
+        <label>Método de pagamento:</label><br>
+        <input type="radio" id="cartao" name="pagamento" value="cartao">
+        <label for="cartao">Cartão de Crédito</label><br>
+        <input type="radio" id="boleto" name="pagamento" value="boleto">
+        <label for="boleto">Boleto</label><br><br>
+
+        <label for="comprovante">Upload de comprovante de estudante:</label>
+        <input type="file" id="comprovante" name="comprovante"><br><br>
+
+        <input type="checkbox" id="termos" name="termos">
+        <label for="termos">Concordo com os termos de participação</label><br><br>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar formulário</button>
+</form>

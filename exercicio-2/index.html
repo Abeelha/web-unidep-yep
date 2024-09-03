@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/gatoIcone.jpg">
+    <link rel="stylesheet" href="./style/styles.css">
+    <title>Formulários</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Exemplo de Formulários</h1>
+    </header>
+
+    <main>
+        <div class="form-selector">
+            <label for="formSelect">Escolha um formulário:</label>
+            <select id="formSelect">
+                <option value="login">Formulário de Login</option>
+                <option value="register">Formulário de Cadastro</option>
+                <option value="search">Formulário de Pesquisa</option>
+                <option value="order">Formulário de Pedido</option>
+                <option value="contact">Formulário de Contato</option>
+                <option value="event">Formulário de Registro de Evento</option>
+            </select>
+        </div>
+
+        <div class="conteudo">
+            <div id="login-form" class="form-content"></div>
+            <div id="register-form" class="form-content" style="display: none;"></div>
+            <div id="search-form" class="form-content" style="display: none;"></div>
+            <div id="order-form" class="form-content" style="display: none;"></div>
+            <div id="contact-form" class="form-content" style="display: none;"></div>
+            <div id="event-form" class="form-content" style="display: none;"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © Batata Alemã pegando fogo :D</p>
+    </footer>
+
+    <script>
+        function loadForm(formId, formFile) {
+            fetch('forms/' + formFile)
+                .then(response => response.text())
+                .then(data => document.getElementById(formId).innerHTML = data);
+        }
+
+        loadForm('login-form', 'form-login.html');
+        loadForm('register-form', 'form-register.html');
+        loadForm('search-form', 'form-search.html');
+        loadForm('order-form', 'form-order.html');
+        loadForm('contact-form', 'form-contact.html');
+        loadForm('event-form', 'form-event.html');
+
+        document.getElementById('formSelect').addEventListener('change', function () {
+            const selectedForm = this.value;
+            document.querySelectorAll('.form-content').forEach(form => {
+                form.style.display = 'none';
+            });
+            document.getElementById(`${selectedForm}-form`).style.display = 'block';
+        });
+    </script>
+
+</body>
+
+</html>

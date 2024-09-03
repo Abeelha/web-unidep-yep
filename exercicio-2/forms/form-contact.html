@@ -1,0 +1,40 @@
+<form action="">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br><br>
+
+    <label for="email">E-mail:</label>
+    <input type="text" id="email" name="email"><br><br>
+
+    <label for="assunto">Assunto:</label>
+    <select id="assunto" name="assunto">
+        <option value="duvida">Dúvida</option>
+        <option value="sugestao">Sugestão</option>
+        <option value="reclamacao">Reclamação</option>
+        <option value="outro">Outro</option>
+    </select><br><br>
+
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem"></textarea><br><br>
+
+    <label>Preferência de contato:</label><br>
+    <input type="checkbox" id="email_pref" name="contato_pref" value="email">
+    <label for="email_pref">E-mail</label><br>
+    <input type="checkbox" id="telefone_pref" name="contato_pref" value="telefone">
+    <label for="telefone_pref">Telefone</label><br><br>
+
+    <div id="telefone_div" style="display:none;">
+        <label for="telefone">Número de telefone:</label>
+        <input type="text" id="telefone" name="telefone"><br><br>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
+
+<script>
+    const telefoneCheckbox = document.getElementById('telefone_pref');
+    const telefoneDiv = document.getElementById('telefone_div');
+
+    telefoneCheckbox.addEventListener('change', function () {
+        telefoneDiv.style.display = this.checked ? 'block' : 'none';
+    });
+</script>
