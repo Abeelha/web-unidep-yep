@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #fff8e1; /* Slightly orange clear color */
+}
+
+header {
+  background-color: #ffe0b2; /* Slightly orange clear color */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #e65100; /* Darker orange */
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #ff8a65; /* Lighter orange */
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff3e0; /* Very light orange background for content */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #e65100; /* Darker orange border */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffe0b2; /* Slightly orange clear color */
+  color: #333;
+}
+
+tfoot td {
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffe0b2; /* Slightly orange clear color */
+}
+
+select, 
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="date"], 
+input[type="number"], 
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #ff8a65; /* Lighter orange */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65100; /* Darker orange */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+input[type="file"] {
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}

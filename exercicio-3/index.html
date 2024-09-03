@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/gatoIcone.jpg">
+    <link rel="stylesheet" href="./style/styles.css">
+    <title>Inscrição Evento</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>EXERCÍCIO 1_ FORMULÁRIO DE INSCRIÇÃO EM EVENTO COM TABELA DE PROGRAMAÇÃO</h1>
+    </header>
+
+    <main>
+        <div class="form-selector">
+            <label for="formSelect">Escolha um exercício:</label>
+            <select id="formSelect">
+                <option value="exercise1">Formulário de Inscrição em Evento</option>
+                <option value="exercise2">Página de Produto</option>
+                <option value="exercise3">Dashboard de Aluno</option>
+            </select>
+        </div>
+
+        <div class="conteudo">
+            <!-- Exercício 1: Formulário de Inscrição em Evento com Tabela de Programação -->
+            <section id="exercise1-form" class="form-content">
+                <header>
+                    <h1>Inscrição para o Evento</h1>
+                </header>
+                <form action="#">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" required><br><br>
+
+                    <label for="interesse">Área de interesse:</label>
+                    <select id="interesse" name="interesse" required>
+                        <option value="tecnologia">Tecnologia</option>
+                        <option value="negocios">Negócios</option>
+                        <option value="arte">Arte</option>
+                    </select><br><br>
+
+                    <label for="necessidades">Necessidades especiais:</label>
+                    <textarea id="necessidades" name="necessidades"></textarea><br><br>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Horário</th>
+                            <th>Atividade</th>
+                            <th>Palestrante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 - 10:00</td>
+                            <td>Abertura</td>
+                            <td>Dr. Allison</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 11:00</td>
+                            <td>Palestra: Inovação Tecnológica</td>
+                            <td>Dr. Allison</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 - 12:00</td>
+                            <td>Workshop: Design Thinking</td>
+                            <td>Dr. Allison</td>
+                        </tr>
+                        <tr>
+                            <td>13:00 - 14:00</td>
+                            <td>Painel: Futuro dos Negócios</td>
+                            <td>Dr. Allison</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:00</td>
+                            <td>Encerramento</td>
+                            <td>Dr. Allison</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Evento gratuito e aberto ao público</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <!-- Exercício 2: Página de Produto com Detalhes e Formulário de Compra -->
+            <section id="exercise2-form" class="form-content" style="display: none;">
+                <header>
+                    <h1>Produto: Camiseta Personalizada</h1>
+                </header>
+                <article>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Detalhes do Produto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Preço</td>
+                                <td>R$ 49,90</td>
+                            </tr>
+                            <tr>
+                                <td>Disponibilidade</td>
+                                <td>Em Estoque</td>
+                            </tr>
+                            <tr>
+                                <td>Cores</td>
+                                <td>Preto, Branco, Azul</td>
+                            </tr>
+                            <tr>
+                                <td>Tamanhos</td>
+                                <td>P, M, G, GG</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <section>
+                    <form action="#">
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" id="quantidade" name="quantidade" min="1" max="10" required><br><br>
+
+                        <label for="cor">Cor:</label>
+                        <select id="cor" name="cor" required>
+                            <option value="preto">Preto</option>
+                            <option value="branco">Branco</option>
+                            <option value="azul">Azul</option>
+                        </select><br><br>
+
+                        <label for="tamanho">Tamanho:</label>
+                        <select id="tamanho" name="tamanho" required>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="GG">GG</option>
+                        </select><br><br>
+
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required><br><br>
+
+                        <label for="endereco">Endereço:</label>
+                        <textarea id="endereco" name="endereco" required></textarea><br><br>
+
+                        <label for="pagamento">Método de pagamento:</label><br>
+                        <input type="radio" id="cartao" name="pagamento" value="cartao" required>
+                        <label for="cartao">Cartão de Crédito</label><br>
+                        <input type="radio" id="boleto" name="pagamento" value="boleto" required>
+                        <label for="boleto">Boleto Bancário</label><br><br>
+
+                        <button type="submit">Adicionar ao Carrinho</button>
+                    </form>
+                </section>
+            </section>
+
+            <!-- Exercício 3: Dashboard de Aluno com Notas e Formulário de Contato -->
+            <section id="exercise3-form" class="form-content" style="display: none;">
+                <header>
+                    <h1>Dashboard do Aluno</h1>
+                    <h2>Nome do Aluno: Theodoro Bertol</h2>
+                    <h2>Curso: ADS</h2>
+                </header>
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Disciplina</th>
+                                <th>Nota 1</th>
+                                <th>Nota 2</th>
+                                <th>Média</th>
+                                <th>Situação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Prog Web</td>
+                                <td>10</td>
+                                <td>10</td>
+                                <td>10</td>
+                                <td>Aprovado Nice :D</td>
+                            </tr>
+                            <tr>
+                                <td>Banco de Dados</td>
+                                <td>7.0</td>
+                                <td>7.5</td>
+                                <td>7.25</td>
+                                <td>Aprovado</td>
+                            </tr>
+                            <tr>
+                                <td>Engenharia de Software</td>
+                                <td>9.0</td>
+                                <td>9.5</td>
+                                <td>9.25</td>
+                                <td>Aprovado</td>
+                            </tr>
+                            <tr>
+                                <td>Redes de Computadores</td>
+                                <td>9.5</td>
+                                <td>9.0</td>
+                                <td>9.75</td>
+                                <td>Aprovado</td>
+                            </tr>
+                            <tr>
+                                <td>Programação Web</td>
+                                <td>8.0</td>
+                                <td>8.5</td>
+                                <td>8.25</td>
+                                <td>Aprovado</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">Média
+                                    Geral: 8.05</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+
+                <section>
+                    <h3>Formulário de Contato com o Professor</h3>
+                    <form action="#">
+                        <label for="assunto">Assunto:</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="duvida">Dúvida</option>
+                            <option value="revisao">Revisão de Nota</option>
+                            <option value="outros">Outros</option>
+                        </select><br><br>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+
+                        <label for="anexo">Anexo:</label>
+                        <input type="file" id="anexo" name="anexo"><br><br>
+
+                        <input type="checkbox" id="enviar-copia" name="enviar-copia">
+                        <label for="enviar-copia">Enviar cópia para meu e-mail</label><br><br>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © Batata Alemã pegando fogo :D</p>
+    </footer>
+
+    <script>
+        document.getElementById('formSelect').addEventListener('change', function () {
+            const selectedForm = this.value;
+            document.querySelectorAll('.form-content').forEach(form => {
+                form.style.display = 'none';
+            });
+            document.getElementById(`${selectedForm}-form`).style.display = 'block';
+        });
+    </script>
+
+</body>
+
+</html>
