@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição para o Encontro de Gatos e Batatas</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Inscrição para o Encontro de Gatos e Batatas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="palestrantes.html">Gatos Palestrantes</a></li>
+                <li><a href="inscricao.html" class="active">Inscrição</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Inscreva-se para o Encontro!</h2>
+            <form action="#">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                <label for="ingresso">Tipo de Ingresso:</label>
+                <select id="ingresso" name="ingresso" required>
+                    <option value="gatinho">Gatinho Padrão</option>
+                    <option value="batata
+                    <option value="gatinho">Gatinho Padrão</option>
+                    <option value="batata-vip">Batata VIP</option>
+                    <option value="premium-purrfect">Premium Purrfect</option>
+                </select><br><br>
+
+                <label for="necessidades">Necessidades Especiais (para seu gato ou batata):</label>
+                <textarea id="necessidades" name="necessidades"></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Encontro de Gatos e Batatas</p>
+    </footer>
+</body>
+</html>
