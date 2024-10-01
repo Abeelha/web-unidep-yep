@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+  font-family: 'Comic Sans MS', sans-serif; /* Fun font for a playful theme */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #fff8dc; /* Light potato-yellow background */
+}
+
+/* Header Styles */
+header {
+  background-color: #f0e68c; /* Soft yellow for header */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #8b4513; /* Potato brown */
+}
+
+h2, h3 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #d2691e; /* Rich orange for a fun cat feeling */
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #8b4513; /* Potato brown */
+  background-color: #f0e68c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #d2691e; /* Darker orange on hover */
+  color: white;
+}
+
+/* Main Section Styles */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+section {
+  max-width: 800px;
+  width: 100%;
+  background-color: #fffaf0; /* Light cream, like mashed potatoes */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 2px solid #d2691e; /* Orange-brown border */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0e68c; /* Soft yellow header for tables */
+  color: #8b4513;
+}
+
+tfoot td {
+  font-weight: bold;
+  text-align: center;
+  background-color: #f0e68c;
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #d2691e; /* Rich orange for buttons */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8b4513; /* Dark potato brown on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #8b4513; /* Dark potato brown */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+img{
+  width: 30%;
+}
