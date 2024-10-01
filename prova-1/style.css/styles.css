@@ -1,183 +1,224 @@
-/* General Styles */
+/* === Reset and Base Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Comic Sans MS', sans-serif; /* Fun font for a playful theme */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 100vh;
-  background-color: #fff8dc; /* Light potato-yellow background */
-}
-
-/* Header Styles */
-header {
-  background-color: #f0e68c; /* Soft yellow for header */
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-h1 {
-  margin: 0;
-  font-size: 2.5em;
-  color: #8b4513; /* Potato brown */
-}
-
-h2, h3 {
-  margin: 0;
-  font-size: 1.8em;
-  color: #d2691e; /* Rich orange for a fun cat feeling */
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #8b4513; /* Potato brown */
-  background-color: #f0e68c;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-  background-color: #d2691e; /* Darker orange on hover */
-  color: white;
-}
-
-/* Main Section Styles */
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  width: 100%;
-}
-
-section {
-  max-width: 800px;
-  width: 100%;
-  background-color: #fffaf0; /* Light cream, like mashed potatoes */
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 10px;
-  font-size: 1.2em;
-}
-
-p {
-  font-size: 1.1em;
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  color: #333333;
   line-height: 1.6;
 }
 
-/* Table Styles */
-table {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === Layout === */
+
+/* Header */
+header {
+  background-color: #6a0dad; /* Purple */
+  color: #ffffff;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-table, th, td {
-  border: 2px solid #d2691e; /* Orange-brown border */
+header h1 {
+  font-size: 1.8rem;
 }
 
-th, td {
-  padding: 10px;
-  text-align: left;
+nav {
+  margin-top: 10px;
 }
 
-th {
-  background-color: #f0e68c; /* Soft yellow header for tables */
-  color: #8b4513;
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
-tfoot td {
+nav ul li a {
+  color: #ffffff;
   font-weight: bold;
-  text-align: center;
-  background-color: #f0e68c;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-/* Form Styles */
-form {
-  margin-top: 20px;
+/* Hover Effect for Navigation Links */
+.navegacao li a:hover {
+  color: #c78c19; /* Yellow */
 }
 
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 1.2em;
+.navegacao li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: #c78c19;
+  transition: width 0.3s ease;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
+.navegacao li a:hover::after {
   width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 15px;
 }
 
+/* Main Content */
+main {
+  padding: 100px 20px 20px;
+}
+
+section {
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+#sobre {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Posts Section */
+#posts article {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#posts article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Contact Form */
+#contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-size: 1.1rem;
+}
+
+input,
 textarea {
-  resize: vertical;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #6a0dad; /* Purple */
 }
 
 button {
-  background-color: #d2691e; /* Rich orange for buttons */
-  color: white;
-  padding: 10px 20px;
+  padding: 12px 20px;
+  background-color: #6a0dad; /* Purple */
+  color: #ffffff;
   border: none;
-  border-radius: 10px;
-  font-size: 1.2em;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-  background-color: #8b4513; /* Dark potato brown on hover */
+  background-color: #c78c19; /* Yellow */
+  transform: scale(1.05);
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
-  background-color: #8b4513; /* Dark potato brown */
-  color: white;
-  padding: 15px;
+  background-color: #c78c19; /* Yellow */
+  color: #ffffff;
   text-align: center;
-  width: 100%;
+  padding: 20px;
+  font-size: 1rem;
+  position: relative;
 }
 
-img{
-  width: 30%;
+/* === Responsiveness === */
+
+/* Tablets and larger phones */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
+
+/* Smartphones */
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  main {
+    padding: 80px 10px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
 }
