@@ -13,7 +13,6 @@ body {
 }
 
 img {
-  max-width: 100%;
   height: auto;
 }
 
@@ -75,6 +74,9 @@ header nav ul li a {
 
 .notification {
   position: relative;
+}
+.notification img {
+  width: 5%;
 }
 
 .notification .badge {
@@ -144,6 +146,7 @@ main {
   flex-wrap: wrap;
 }
 
+/* Existing styles for cards */
 .card {
   background-color: #16213e;
   border: 1px solid #0f3460;
@@ -152,13 +155,33 @@ main {
   flex: 1;
   min-width: 200px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Additional styling for cards */
+.card {
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+  border: 2px solid #f39c12;
+  padding: 30px;
+  margin: 10px;
+  color: #e0e0e0;
+  text-align: center;
+}
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #f39c12;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
 /* Activities Section */
 .activities ul {
   list-style: none;
