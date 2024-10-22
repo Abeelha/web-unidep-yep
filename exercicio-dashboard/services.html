@@ -9,18 +9,29 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1>Dashboard</h1>
-        <nav class="nav">
+    <header>
+        <nav>
             <ul class="navegacao">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="notification">
+                <span class="badge">3</span>
+                <img src="notification-icon.png" alt="Notifications">
+            </div>
         </nav>
     </header>
-    <main class="main-content">
+    <aside>
+        <ul class="sidebar-menu">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </aside>
+    <main>
         <section id="services" class="section">
             <h2>Our Services</h2>
             <div class="service">
@@ -40,7 +51,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer>
         <p>&copy; 2023 Dashboard. All rights reserved.</p>
     </footer>
 </body>
