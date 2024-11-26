@@ -3,23 +3,17 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #4b0082; /* Deep Purple */
-  color: #ffd700; /* Yellow */
+  background-color: #4B0082; /* Deep Purple */
+  color: #FFD700; /* Yellow */
 }
 
 a {
-  color: #ffd700; /* Yellow */
+  color: #FFD700; /* Yellow */
 }
 
 h1 {
   text-align: center;
   margin-top: 20px;
-}
-
-.mr-robot-logo {
-  width: 200px;
-  height: auto;
-  border-radius: 50%;
 }
 
 /* Navigation Menu */
@@ -28,8 +22,8 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #4b0082; /* Deep Purple */
-  color: #ffd700; /* Yellow */
+  background-color: #4B0082; /* Deep Purple */
+  color: #FFD700; /* Yellow */
 }
 
 .nav-container .menu ul {
@@ -42,14 +36,14 @@ h1 {
 }
 
 .nav-container .menu ul li a {
-  color: #ffd700; /* Yellow */
+  color: #FFD700; /* Yellow */
   text-decoration: none;
 }
 
 @media (max-width: 768px) {
   .nav-container .menu ul {
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
   }
 }
 
@@ -62,15 +56,14 @@ h1 {
 .gallery-container img {
   width: 80%;
   max-width: 500px;
-  height: auto;
 }
 
 .gallery-container button {
   margin: 10px;
   padding: 10px 20px;
-  background-color: #ffd700; /* Yellow */
+  background-color: #FFD700; /* Yellow */
   border: none;
-  color: #4b0082; /* Deep Purple */
+  color: #4B0082; /* Deep Purple */
   cursor: pointer;
 }
 
@@ -84,23 +77,31 @@ h1 {
 }
 
 .form-container label {
-  color: #ffd700; /* Yellow */
+  color: #FFD700; /* Yellow */
 }
 
 .form-container input {
   padding: 10px;
-  border: 1px solid #ffd700; /* Yellow */
+  border: 1px solid #FFD700; /* Yellow */
   border-radius: 5px;
 }
 
 .form-container button {
   padding: 10px;
-  background-color: #ffd700; /* Yellow */
+  background-color: #FFD700; /* Yellow */
   border: none;
-  color: #4b0082; /* Deep Purple */
+  color: #4B0082; /* Deep Purple */
   cursor: pointer;
 }
 
 .error-message {
   color: red;
+}
+
+/* Mr. Robot Logo */
+.mr-robot-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
