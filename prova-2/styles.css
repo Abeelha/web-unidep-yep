@@ -19,6 +19,7 @@ h1 {
 .mr-robot-logo {
   width: 200px;
   height: auto;
+  border-radius: 50%;
 }
 
 /* Navigation Menu */
