@@ -1,0 +1,105 @@
+/* Shared Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4b0082; /* Deep Purple */
+  color: #ffd700; /* Yellow */
+}
+
+a {
+  color: #ffd700; /* Yellow */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mr-robot-logo {
+  width: 200px;
+  height: auto;
+}
+
+/* Navigation Menu */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4b0082; /* Deep Purple */
+  color: #ffd700; /* Yellow */
+}
+
+.nav-container .menu ul {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-container .menu ul li {
+  list-style: none;
+}
+
+.nav-container .menu ul li a {
+  color: #ffd700; /* Yellow */
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .nav-container .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Gallery */
+.gallery-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.gallery-container img {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+}
+
+.gallery-container button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ffd700; /* Yellow */
+  border: none;
+  color: #4b0082; /* Deep Purple */
+  cursor: pointer;
+}
+
+/* Form */
+.form-container {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container label {
+  color: #ffd700; /* Yellow */
+}
+
+.form-container input {
+  padding: 10px;
+  border: 1px solid #ffd700; /* Yellow */
+  border-radius: 5px;
+}
+
+.form-container button {
+  padding: 10px;
+  background-color: #ffd700; /* Yellow */
+  border: none;
+  color: #4b0082; /* Deep Purple */
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+}
